@@ -1,0 +1,11 @@
+1) Top 10 artists who have performed in the most number of places
+2) Top 10 most common place types for artists to perform
+3) Artist gender distribution  (avg. males and females) across different types of instruments
+5) Count of recordings that are Official, Promotion, Bootleg, Pseudo-Release (release status)
+6) Top 10 areas with the most # of music events
+7) Top 10 most common packaging types
+8) 10 least common instrument types by recording
+9) Do people tend to order series manually or automatically?
+10) What's the average duration of the top 10 most popular songs ?
+11) Tracks with the shortest amount of lyrics
+12) Top 10 artists who have produced the most songs since 1990 and their popularity (does producing more songs mean you will be more popular?) 
