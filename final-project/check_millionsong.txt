@@ -1,0 +1,112 @@
+select * from millionsong.words order by random() limit 10;
+   word
+----------
+ troi
+ duda
+ ant
+ grade
+ busco
+ mean
+ wet
+ verso
+ cigarett
+ viel
+
+select * from millionsong.artist_mbtag order by random() limit 10;
+      artist_id      |       mbtag
+--------------------+-------------------
+ AR4KS8C1187FB4CF3D | united states
+ ARA03PG1187B9B0681 | punk
+ ARIRDVY1187FB587CC | australian
+ ARIXXLC122BCFC957B | progressive metal
+ AR43SDL1187B98F578 | finnish
+ AR62EDZ1187B9AC433 | american
+ AR3RPLL1187B9B2301 | rock and indie
+ AR4YEJU1187B991468 | darkwave
+ AR87K371187FB5AA8E | heavy metal
+ AR9BO4K1187FB52A3C | english
+
+select * from millionsong.artists order by random() limit 10;
+     artist_id
+--------------------
+ ARJLQZY12454A3E837
+ AR978421187B9A4921
+ ARCSDMN1187B9AE38F
+ AROKCQS11C8A421D9C
+ ARBR2RC1187B9ABE99
+ ARCHHUS1187FB535F9
+ ARHSVTP11E2835F26F
+ ARR3Y2A11A348EFE04
+ ARQ0JU31187B99B2B5
+ ARIGNWK12086C12455
+
+select * from millionsong.artist_term order by random() limit 10;
+     artist_id      |        term
+--------------------+--------------------
+ ARKYFOP1187B996D87 | svensk topp100
+ AR1ALZ81187B98F668 | progressive trance
+ AR6WQL31187B99F57E | soulful house
+ AR5JCN31187B98C79B | parody
+ AREBCAO1187B994183 | relaxation
+ ARYCRJO1241B9CB830 | soul
+ ARTIGXH1187B992658 | male vocalist
+ AR8KCGU1187FB514D5 | hip hop
+ AR4WS1U1187FB5B02E | rock
+ ARG327Z1187B99E61A | electronic
+
+select * from millionsong.lyrics order by random() limit 10;
+      track_id      | mxm_tid  |  word   | count | is_test
+--------------------+----------+---------+-------+---------
+ TRUHAOW128F93418EA | 11140653 | chill   |     1 |       0
+ TRUCGMI128F427EC12 |  3317405 | love    |    24 |       0
+ TRGKJVM128F424A562 |  5649590 | when    |     1 |       0
+ TRTJGET128F93016F8 |  5763142 | darkest |     1 |       0
+ TRCLJLM128F146B939 |  1422462 | tick    |     1 |       0
+ TRREEYE128F429B5D1 |  6373792 | suffer  |     1 |       0
+ TRRMNZV12903CC472B |   855203 | matter  |     1 |       0
+ TRYBTTC12903CD661D |  3938723 | from    |     5 |       0
+ TRQZPGI12903CC3601 |   879742 | she     |     5 |       0
+ TRQTNUD12903CE8801 |  9771868 | live    |     1 |       0
+
+
+select * from millionsong.songs_popularity order by random() limit 10;
+                  userid                  |        song        | play_count
+------------------------------------------+--------------------+------------
+ 374435bd4c6876a686b7ab415214acddcbd7fa16 | SOVEBCN12A8C13D0A6 |          1
+ 36893e7f2369b18416c2d2a1ef0650901666c9b8 | SOYVYPB12AAF3B45D1 |          1
+ ba0aa5abab3cd31bb8a7f0a8284b97e75cf01b93 | SOUOGZZ12AB017CD95 |          1
+ 1dc3d735393af087cecd8329e7d5874ee5e33fa1 | SORJXDT12A67ADE61B |          1
+ 027a6596a0f65fc6ddef50b64652f4ebf02275ff | SOVDYZE12A58A7AA62 |          3
+ f6101f37574c0d5acad69d225c7a286362b3cf11 | SOIROON12A6701E0B8 |          1
+ 2bb855c89da17608875d7e954de0213201033272 | SOMUZNU12AB0189B5D |          1
+ 906163b11bdd9567df5d5d51d4a83a2caf3dc610 | SOIUAZN12A58A7CAEF |          1
+ ac2e4b49b698809d2edb19d9c1fbdf4683f2db33 | SOSKKOL12A58A7BE90 |          4
+ 2be4b9aa0e6c07152f9ca9adfd0e5075a1f90294 | SOKEEKD12AB0188B39 |          3
+
+
+select * from millionsong.songs_summary order by random() limit 10;
+      track_id      |                   title                   |      song_id       |             release              |     artist_id      |             artist_mbid              |         artist_name         | duration  | artist_familiarity | artist_hotttnesss | year
+--------------------+-------------------------------------------+--------------------+----------------------------------+--------------------+--------------------------------------+-----------------------------+-----------+--------------------+-------------------+------
+ TRLILIF128F4236FCB | Looking For A Boy (Album Version)         | SOSMBWH12A81C21CF1 | Conchetta                        | ARXJ26Y1187B992470 | 5348ed1a-cbb6-4777-8566-b2bcebd9bf8d | Connie Stevens              | 156.94322 | 0.469289874345     | 0.321974701215    |    0
+ TRHQBYO128F42857E3 | We'll Make The Best Of It                 | SORNTWB12A8C13B45E | Blanc Faces                      | ARQLHKI122988F4773 | 298f1f7d-64dd-4068-827d-062913a57840 | Blanc Faces                 | 257.93261 | 0.305177828689     | 0.324034717017    |    0
+ TRYUNSE128F424BE22 | Crush                                     | SOEIZFA12A58A7DCAC | Die For Allah/Foolish Americans  | ARY6PET1187B9A517E | ec164b09-5fa5-4124-b514-db2f1dd25313 | Fearless Iranians From Hell | 151.06567 | 0.523349735501     | 0.374751450298    |    0
+ TRIRKMH128F422E2E0 | The Flow (Alternate Mix)                  | SOMMOVK12A8AE4846E | In - Trance (Aerobics Music)     | ARKNWJO11F50C51551 | a7b0de09-31c7-486a-9722-4ad73df7bd62 | Danger Zone                 | 226.71628 | 0.412459606088     | 0.298657606277    |    0
+ TROPRAJ128F149DB19 | Jacket Town                               | SOBQQWH12A6D4FBA64 | Collection                       | ARF6Z2H1187B9914BB | 1243d99e-8f5a-4f7e-810c-5a1d20f41065 | Yellowjackets               | 320.65261 | 0.595764203798     | 0.381608304969    | 1993
+ TRQYDHN12903CB9818 | Patrons du style (feat. Les Sp├⌐cialistes) | SOFWTVA12AB0184E4E | Special Dany Dan_ Vol. 1         | ARUVHN71187FB501CE | 9a8b9d3d-f5f1-46c2-8f1a-ad1f7783e62c | Dany Dan                    | 71.1571   | 0.379666018033     | 0.393616947606    |    0
+ TRFRRCW12903CFA2B3 | Las Abarcas Desiertas                     | SOAKJEB12AC9097360 | Hijo De La Luz Y De La Sombra    | ARYPRT21187FB4BBC6 | 64e96700-d880-452e-803d-e4d7628b0224 | Joan Manuel Serrat          | 217.88689 | 0.619641392566     | 0.421641763559    | 2010
+ TRRPXRW128F92FFB83 | The Children                              | SOWWEHP12AB0183AF7 | No Protection                    | ARIWVZL1187B99096B | fbf445c0-11ae-4d3e-af1a-c6e2783e447c | Starship                    | 340.03546 | 0.857694330628  
+
+ select * from millionsong.tracks order by random() limit 10;
+
+        tid
+--------------------
+ TRVCLGX128F426EFD3
+ TRUTSWK12903CD4430
+ TRPNWVX128F4268051
+ TRPIRNA128F148C3EE
+ TRDVTBZ12903CE27C3
+ TRLGGVD128F9322F88
+ TRWUIMU128F424E03F
+ TRPYFZG128F92E687B
+ TRRXRAL12903D05532
+ TRHFVYL12903CF19B2
