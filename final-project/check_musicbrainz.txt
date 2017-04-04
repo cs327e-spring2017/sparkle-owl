@@ -1,0 +1,267 @@
+select * from musicbrainz.area_alias order by random() limit 10;
+  id   | area  |     name      | locale | edits_pending |         last_updated          | type |   sort_name   | begin_date_year | begin_date_month | begin_date_day | end_date_year | end_date_month | end_date_day | primary_for_locale | ended
+-------+-------+---------------+--------+---------------+-------------------------------+------+---------------+-----------------+------------------+----------------+---------------+----------------+--------------+--------------------+-------
+ 25231 | 10575 | Nagomi        | en     | 0             | 2013-11-03 19:12:29.179123+00 | 1    | Nagomi        |                 |                  |                |               |                |              | t                  | f
+ 65756 |  5026 | πâªπâ│πâÖτ£î      | ja     | 0             | 2013-11-27 21:20:15.789787+00 | 1    | πâªπâ│πâÖτ£î      |                 |                  |                |               |                |              | t                  | f
+ 57714 | 12647 | Vevelstad     | en     | 0             | 2013-11-24 11:19:16.077623+00 | 1    | Vevelstad     |                 |                  |                |               |                |              | t                  | f
+ 53897 | 74305 | Schillingen   | en     | 0             | 2013-11-24 01:54:50.058211+00 | 1    | Schillingen   |                 |                  |                |               |                |              | t                  | f
+  3131 |  3339 | Addis Abeba   | fi     | 0             | 2013-05-27 17:49:13.942957+00 | 1    | Addis Abeba   |                 |                  |                |               |                |              | t                  | f
+ 14608 |  2479 | ╒Å╒í╒╛╒╕╓é╒╖╒½ ╒┤╒í╓Ç╒ª  | hy     | 0             | 2013-11-01 06:31:55.398776+00 | 1    | ╒Å╒í╒╛╒╕╓é╒╖╒½ ╒┤╒í╓Ç╒ª  |                 |                  |                |               |                |              | t                  | f
+ 19784 |   612 | Kanton Z├╝rich | de     | 0             | 2013-11-02 13:23:42.442163+00 | 1    | Kanton Z├╝rich |                 |                  |                |               |                |              | t                  | f
+ 61324 |  3406 | πâÉπâ½πâ¥πâ½Θâí    | ja     | 0             | 2013-11-26 09:58:17.292557+00 | 1    | πâÉπâ½πâ¥πâ½Θâí    |                 |                  |                |               |                |              | t                  | f
+ 21969 | 10814 | Hakodate      | en     | 0             | 2013-11-03 00:12:39.732629+00 | 1    | Hakodate      |                 |                  |                |               |                |              | t                  | f
+ 56145 |  6270 | Szyd┼éowiec    | en     | 0             | 2013-11-24 07:30:37.209581+00 | 1    | Szyd┼éowiec    |                 |                  |                |               |                |              | t                  | f
+
+select * from musicbrainz.artist order by random() limit 10;
+   id    |                 gid                  |               name               |            sort_name             | begin_date_year | begin_date_month | begin_date_day | end_date_year | end_date_month | end_date_day | type | area | gender |          comment           | edits_pending |         last_updated          | ended | begin_area | end_area
+---------+--------------------------------------+----------------------------------+----------------------------------+-----------------+------------------+----------------+---------------+----------------+--------------+------+------+--------+----------------------------+---------------+-------------------------------+-------+------------+----------
+  964339 | 499a4486-0043-4f78-a8c4-31cd04936c03 | Subbase                          | Subbase                          |                 |                  |                |               |                |              |      |      |        |                            | 0             | 2013-01-09 23:57:08.284711+00 | f     |            |
+  709423 | 224f6d0b-519f-427a-a377-e05688c761da | Blue Connection                  | Blue Connection                  |                 |                  |                |               |                |              |    2 |      |        |                            | 0             | 2010-05-08 17:15:00.471053+00 | f     |            |
+   61361 | 3b37e895-be3c-44c6-84db-a8276b9b57ae | Rock Island Line                 | Rock Island Line                 |                 |                  |                |               |                |              |      |      |        |                            | 0             |                               | f     |            |
+ 1200441 | d3389708-74e5-46ca-a57f-68963ae6292c | Union Blak                       | Union Blak                       |                 |                  |                |               |                |              |    2 | 221  |        | hiphop uk                  | 0             | 2015-08-21 21:43:44.715937+00 | f     |            |
+  948564 | 07e69fac-3180-4f65-aef5-5b64447f4502 | Wilson Douglas and Gruder Morris | Wilson Douglas and Gruder Morris |                 |                  |                |               |                |              |      |      |        | West Virginia Fiddler      | 0             | 2012-11-30 20:29:37.813082+00 | f     |            |
+ 1355686 | 2a0500f0-66d6-4566-8a30-6c9aaa8a0a4f | Ricardo Mendes                   | Mendes, Ricardo                  |                 |                  |                |               |                |              |    1 |      | 1      |                            | 0             | 2016-04-15 07:42:53.855438+00 | f     |            |
+  492342 | 6099c310-dfad-4bb8-82ec-9f5181f59d53 | Contact                          | Contact                          |                 |                  |                |               |                |              |    2 | 38   |        | Canadian band              | 0             | 2012-03-22 08:43:13.533146+00 | f     |            |
+ 1208496 | 9e961cc2-ad1f-494c-a44f-c58f66aa2566 | DJ Manu                          | Manu, DJ                         |                 |                  |                |               |                |              |      |      |        | schlager/party music       | 0             | 2015-03-01 16:43:09.868332+00 | f     |            |
+  368884 | aa826c32-185e-48ab-b3d7-77bc1c41e322 | Billy Cook                       | Cook, Billy                      | 
+
+
+  select * from musicbrainz.artist_alias order by random() limit 10;
+   id   | artist  |          name          | locale | edits_pending |         last_updated          | type |       sort_name        | begin_date_year | begin_date_month | begin_date_day | end_date_year | end_date_month | end_date_day | primary_for_locale | ended
+--------+---------+------------------------+--------+---------------+-------------------------------+------+------------------------+-----------------+------------------+----------------+---------------+----------------+--------------+--------------------+-------
+ 135024 | 1017714 | Φíùµ£¿ Φúò                | ja     | 0             | 2013-06-25 22:00:20.293955+00 | 1    | πü╛πüíπüì πü▓πéìπüù          |                 |                  |                |               |                |              | f                  | f
+  79559 |  574315 | ╪▒┘ü┘è┘é ╪┤╪º┘à┘è              |        | 0             | 2012-05-15 18:57:13.252186+00 |      | ╪▒┘ü┘è┘é ╪┤╪º┘à┘è              |                 |                  |                |               |                |              | f                  | f
+ 130947 |  983006 | Alkaios von Mytilene   | de     | 0             | 2013-03-08 22:00:36.650949+00 |      | Mytilene, Alkaios von  |                 |                  |                |               |                |              | f                  | f
+  34617 |   57107 | JFJO                   |        | 0             | 2012-05-15 18:57:13.252186+00 |      | JFJO                   |                 |                  |                |               |                |              | f                  | f
+ 152334 |   33318 | Mohammad Abdul Aziz    |        | 0             | 2014-10-05 01:00:24.017732+00 | 1    | Aziz, Mohammad Abdul   |                 |                  |                |               |                |              | f                  | f
+  13065 |  171125 | Law Dai Yau            |        | 0             | 2012-05-15 18:57:13.252186+00 |      | Law Dai Yau            |                 |                  |                |               |                |              | f                  | f
+ 101670 |   62647 | Thierry Robin          |        | 0             | 2016-10-21 17:31:32.700335+00 |      | Robin, Thierry         |                 |                  |                |               |                |              | f                  | f
+ 155951 |  404220 | Octavian Justinian Uta |        | 0             | 2015-01-14 12:28:41.284135+00 | 2    | Octavian Justinian Uta |                 |                  |                |               |                |              | f   ^Cdev=# select * from musicbrainz.event order by random() limit 10;
+  id   |                 gid                  |                                name                                 | begin_date_year | begin_date_month | begin_date_day | end_date_year | end_date_month | end_date_day |   time   | type | cancelled |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           setlist                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | comment | edits_pending |         last_updated          | ended
+-------+--------------------------------------+---------------------------------------------------------------------+-----------------+------------------+----------------+---------------+----------------+--------------+----------+------+-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+select * from musicbrainz.event_type order by random() limit 10;
+ id |        name        | parent | child_order |                                                                                                   description                                                                                                    |                 gid
+----+--------------------+--------+-------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------
+  4 | Convention/Expo    |        |           4 | A convention, expo or trade fair is an event which is not typically orientated around music performances, but can include them as side activities.                                                               | d56e39f9-071f-3086-97f4-92a1a7e04ec3
+  3 | Launch event       |        |           3 | A party, reception or other event held specifically for the launch of a release.                                                                                                                                 | caee15f1-f9c4-3122-821f-34ea4011ac7d
+  2 | Festival           |        |           2 | An event where a number of different acts perform across the course of the day. Larger festivals may be spread across multiple days.                                                                             | b6ded574-b592-3f0e-b56e-5b5f06aa0678
+  1 | Concert            |        |           1 | An individual concert by a single artist or collaboration, often with supporting artists who perform before the main act.                                                                                        | ef55e8d7-3d00-394a-8012-f5506a29ff0b
+  5 | Masterclass/Clinic |        |           5 | A masterclass or clinic is an event where an artist meets with a small to medium-sized audience and instructs them individually and/or takes questions intended to improve the audience members' playing skills. | 331506bd-58d1-3c16-95e8-538841a574fe
+(5 rows)
+
+
+select * from musicbrainz.gender order by random() limit 10;
+ id |  name  | parent | child_order | description |                 gid
+----+--------+--------+-------------+-------------+--------------------------------------
+  2 | Female |        | 2           |             | 93452b5a-a947-30c8-934f-6a4056b151c2
+  1 | Male   |        | 1           |             | 36d3d30a-839d-3eda-8cb3-29be4384e4a9
+  3 | Other  |        | 3           |             | 081c0bf5-da60-37b0-95f8-2207a3f7f9d6
+
+
+
+select * from musicbrainz.instrument order by random() limit 10;
+ id  |                 gid                  |       name       | type | edits_pending |         last_updated          |               comment                |                                                                                description
+-----+--------------------------------------+------------------+------+---------------+-------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 487 | f341241c-6a19-4ed9-acb0-0b89fe0bfdef | agog├┤            |    3 | 0             | 2014-08-22 17:00:30.707103+00 |                                      | The agog├┤ is a single or multiple bell used in samba music with origins in traditional Yoruba music.
+  13 | 540280f1-d6cf-46bf-968b-695e99e216d7 | flute            |    1 | 0             | 2014-10-02 10:15:27.481695+00 |                                      | A flute is an aerophone or reedless wind instrument that produces its sound from the flow of air across an opening.
+ 233 | 2c27736b-e774-4f8e-8290-604d3c468870 | ─æ├án tß╗⌐ d├óy       |    2 | 0             | 2014-08-22 14:55:02.999166+00 |                                      | A latter-day construction in the form of a four-stringed, square-bodied bass guitar
+ 350 | 4ddf3737-9ef2-49c4-9de2-697a19884463 | pipa             |    2 | 0             | 2014-08-22 16:58:24.81219+00  |                                      | The pipa is a four-stringed plucked Chinese instrument with a pear-shaped body.
+  59 | 39354e17-ab05-4aa5-b503-3092a6b4622c | violins          |    2 | 0             | 2017-01-11 14:32:20.107277+00 | violin family                        |
+ 435 | 96bec768-bee7-4b67-816e-3b4743df98ec | fretless bass    |    2 | 0             | 2014-08-22 17:23:44.540973+00 |                                      | variety of bass guitars without frets
+ 429 | 7d401fc3-21ae-4299-abf9-075152446368 | practice chanter |    1 | 0             | 2014-08-22 14:16:44.362594+00 |                                      | Looks like a recorder, but with double reeds and bagpipe fingering system. Mostly used to learn how to play the pipes, but are occasionally played in their own right.
+ 354 | 65116580-10f5-4123-9d86-5e379cd9ab83 | wire-strung harp |    2 | 0             | 2014-08-22 14:50:24.234991+00 |                                      |
+ 582 | ad0ddf4c-05ca-4d9b-a159-8caed25e6bf4 | gralla           |    1 | 0             | 2014-08-22 13:16:28.844295+00 |                                      | The gralla is a traditional Catalan double reed instrument in the oboe family.
+ 778 | 4d4e45e0-660d-4456-89cd-47a3fa14bb7c | accordina        |    1 | 0             | 2016-08-01 18:33:50.830055+00 | a type of harmonica/accordion hybrid | a type of Harmonica/Accordion hybrid, the bellows for the accordion bit with butt
+
+ select * from musicbrainz.instrument_type order by random() limit 10;
+ id |         name          | parent | child_order | description |                 gid
+----+-----------------------+--------+-------------+-------------+--------------------------------------
+  5 | Other instrument      |        |           5 |             | 01ba5777-02dd-347d-94a1-73e3db00215d
+  1 | Wind instrument       |        |           1 |             | 876464a8-e74f-3f40-9bd3-637d2b1743ae
+  3 | Percussion instrument |        |           3 |             | 68fa2525-4c23-3386-bb81-e84994342e9a
+  2 | String instrument     |        |           2 |             | cc00f97f-cf3d-3ae2-9163-041cb1a0d726
+  4 | Electronic instrument |        |           4 |             | 98df6cec-95e5-3cbc-9a2d-7ea6c8be6f3c
+
+select * from musicbrainz.label order by random() limit 10;
+   id   |                 gid                  |           name           | begin_date_year | begin_date_month | begin_date_day | end_date_year | end_date_month | end_date_day | label_code | type | area |                comment                | edits_pending |         last_updated          | ended
+--------+--------------------------------------+--------------------------+-----------------+------------------+----------------+---------------+----------------+--------------+------------+------+------+---------------------------------------+---------------+-------------------------------+-------
+  68660 | ef3ac884-9b92-4497-a22f-938b305749cd | Rhythm King Music        |                 |                  |                |               |                |              |            | 7    |      | Publishing arm of Rhythm King Records | 0             | 2013-01-27 11:00:17.804198+00 | f
+ 103225 | eca4f067-4e91-439e-9e30-e7f98fbb78f1 | Fastlife                 |                 |                  |                |               |                |              |            |      |      |                                       | 0             | 2015-05-07 20:38:10.131888+00 | f
+  98170 | ff53ed3e-2ea8-4d43-8c2c-1ccffd496358 | Forgive & Forget Records |                 |                  |                |               |                |              |            |      |      |                                       | 0             | 2014-12-18 17:48:40.800463+00 | f
+ 132667 | 87f9bb2e-ad83-4856-a62d-b927b0155a4c | M . A                    |                 |                  |                |               |                |              |            |      |      |                                       | 0             | 2017-02-23 06:23:53.662786+00 | f
+ 130809 | 24c971c5-f8d4-4735-8c46-1620d50879bf | Alpharudel Records       |                 |                  |                |               |                |              |            |      |      |                                       | 0             | 2017-01-17 12:02:00.24182+00  | f
+  56394 | 1c1db13c-f83a-4548-a3e6-d1d5f98878ea | More Love Productions    |                 |                  |                |               |                |              |            | 7    |  222 |                                       | 0             | 2011-03-27 14:08:15.471123+00 | f
+  63638 | ddd2413a-7479-4596-8a66-f2b4d1b5341f | Man Made Records         |                 |                  |                |               |                |              |            |      |      |                                       | 0             | 2012-01-14 03:15:16.125842+00 | f
+  36554 | bc64fe7a-e732-44fd-a575-d25f50baa75d | Black Side               |                 |                  |                |               |                |              |            |      |  176 |                                    
+
+select * from musicbrainz.label_type order by random() limit 10;
+ id |        name         | parent | child_order | description |                 gid
+----+---------------------+--------+-------------+-------------+--------------------------------------
+  6 | Reissue Production  |      3 | 0           |             | 88ee6ae7-f413-3490-a1d2-54f6a9f0838c
+  5 | Bootleg Production  |      3 | 0           |             | fdac9b96-359b-3488-9322-ad99c2473636
+  1 | Distributor         |        | 0           |             | 53ab8dcc-9946-3b62-966e-7634d78e5034
+  3 | Production          |        | 0           |             | a2426aab-2dd4-339c-b47d-b4923a241678
+  9 | Imprint             |        | 0           |             | b6285b2a-3514-3d43-80df-fcf528824ded
+  8 | Rights Society      |        | 0           |             | 78ab2758-7809-372c-9b99-74b7ab87f390
+  2 | Holding             |        | 0           |             | 43f31a62-97e4-36f6-9752-453c131b71ed
+  4 | Original Production |      3 | 0           |             | 7aaa37fe-2def-3476-b359-80245850062d
+  7 | Publisher           |        | 0           |             | e9ad53b0-e3d0-3885-a10b-8193d501338c
+
+
+
+select * from musicbrainz.language order by random() limit 10;
+  id  | iso_code_2t | iso_code_2b | iso_code_1 |                 name                 | frequency | iso_code_3
+------+-------------+-------------+------------+--------------------------------------+-----------+------------
+  699 |             |             |            | Alege                                |         0 | alf
+ 3607 |             |             |            | Kayaw                                |         0 | kvl
+ 7415 |             |             |            | Tawand├¬                              |         0 | xtw
+ 6149 |             |             |            | Sauri                                |         0 | srt
+ 1489 |             |             |            | Baybayanon                           |         0 | bvy
+ 3705 |             |             |            | Kikai                                |         0 | kzg
+ 5500 |             |             |            | Pao                                  |         0 | ppa
+  902 |             |             |            | Awyi                                 |         0 | auw
+ 6066 |             |             |            | Sanga (Democratic Republic of Congo) |         0 | sng
+ 1223 |             |             |            | Bekwarra                             |         0 | bkv
+
+
+
+select * from musicbrainz.place order by random() limit 10;
+  id   |                 gid                  |              name              | type |                   address                    |  area  |      coordinates       | comment | edits_pending |         last_updated          | begin_date_year | begin_date_month | begin_date_day | end_date_year | end_date_month | end_date_day | ended
+-------+--------------------------------------+--------------------------------+------+----------------------------------------------+--------+------------------------+---------+---------------+-------------------------------+-----------------+------------------+----------------+---------------+----------------+--------------+-------
+ 21307 | 1d6084e4-74ea-4000-b97b-09d66f00c4a5 | Joseph Haydn Hall              | 2    | Anton-von-Webern-Platz 1, 1030               |    653 | (48.201799,16.382577)  |         | 0             | 2016-09-13 18:03:04.016198+00 |                 |                  |                |               |                |              | f
+ 23310 | 7db845af-6d69-4294-860b-82ccf26a55f4 | LA Studio                      | 1    |                                              |        |                        |         | 0             | 2016-12-14 02:18:57.839469+00 |                 |                  |                |               |                |              | f
+ 23021 | 921c5956-afff-4031-895a-da49fde7120c | Bar St-Laurent II              | 2    | 5550 Boul Saint-Laurent Montreal, QC H2T 1S8 |   7279 | (45.525766,-73.599146) |         | 0             | 2016-12-04 08:00:49.86142+00  |                 |                  |                |               |                |              | f
+  1461 | 1face1f5-03e4-44df-978c-beee23fb3937 | EMTA kammersaal                | 2    | R├ñvala puiestee 16, 10143                    |   5111 | (59.431295,24.748204)  |         | 0             | 2013-10-25 12:33:20.708794+00 |                 |                  |                |               |                |              | f
+  8500 | e35d20f5-53d1-4afd-a1f1-b3133c61a6c5 | πéóπé╣πâåπâ╝πâ½πâùπâ⌐πé╢               | 3    | πÇÆ730-0812 σ║âσ│╢σ╕éΣ╕¡σî║σèáσÅñτö║4-17              |  11905 | (34.387775,132.448055) |         | 0             | 2014-12-02 11:42:26.503499+00 | 1991            | 1                | 26             |               |                |              | f
+  9450 | d97616d6-0d7b-4456-8977-0f5634e14361 | Cellar Club                    | 2    |                                              |  30966 |                        |         | 0             | 2015-01-24 10:32:46.895901+00 |                 |                  |                |               |                |              | f
+  3699 | b8bb8b31-b901-476f-ae9f-0d160df14865 | Lukaskirche                    | 6    | Lukasplatz, 01069                            |   7291 | (51.031821,13.734234)  | Dresden | 0             | 2017-01-03 17:00:21.384861+00 | 1899            |                  |                |               |                |              | f
+ 18082 | af594db4-270b-4db8-a967-635569316f5d | BLIP                           |      |                                              |        |                        |         | 0             | 2016-04-12 11:07:11.543747+00 |              
+
+ select * from musicbrainz.place_type order by random() limit 10;
+ id |        name        | parent | child_order |                                                                                            description                                                                                            |                 gid
+----+--------------------+--------+-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------
+  2 | Venue              |        |           2 | A place that has live artistic performances as one of its primary functions, such as a concert hall.                                                                                              | cd92781a-a73f-30e8-a430-55d7521338db
+  3 | Other              |        |          99 |                                                                                                                                                                                                   | a0df5ead-0bd6-33d8-8444-855a9f3e9970
+  6 | Religious building |        |           5 | A place that has worship or religious studies as its main function. Religious buildings often host concerts and serve as recording locations, especially for classical music.                     | a120ca4a-69e9-3c0e-bc09-21cae26eb621
+  4 | Stadium            |        |           3 | A place whose main purpose is to host outdoor sport events, typically consisting of a pitch surrounded by a structure for spectators with no roof, or a roof which can be retracted.              | 62664fbd-cd55-3b5f-a5ea-fb5d1bc0113c
+  1 | Studio             |        |           1 | A place designed for non-live production of music, typically a recording studio.                                                                                                                  | 05fa6a09-ff92-3d34-bdbb-5141d3c24f38
+  5 | Indoor arena       |        |           4 | A place consisting of a large enclosed area with a central event space surrounded by tiered seating for spectators, which can be used for indoor sports, concerts and other entertainment events. | a77c11f6-82fa-3cc0-9041-ac60e5f6e024
+
+select * from musicbrainz.recording order by random() limit 10;
+    id    |                 gid                  |                          name                           | artist_credit | length |                            comment                             | edits_pending |         last_updated          | video
+----------+--------------------------------------+---------------------------------------------------------+---------------+--------+----------------------------------------------------------------+---------------+-------------------------------+-------
+  8091766 | f65d30aa-c2e5-4a6d-9b8c-29eb13afafa4 | Chapter 12-02: Help                                     |        529969 | 142706 |                                                                | 0             |                               | f
+ 10683391 | 157c178b-eadc-48e1-a5c8-090c4de9665b | Refrigerate                                             |        698711 | 209000 |                                                                | 0             | 2014-12-10 14:00:08.31233+00  | f
+  5215254 | 83786576-b97e-4f80-8f36-06a981c0fba6 | Quicksand                                               |         35976 | 160093 |                                                                | 0             |                               | f
+ 18115692 | f14e3fbe-ac19-4277-87b1-8d7b98f4e40b | Actually, We Are Still in Kansas                        |       1519644 | 187147 |                                                                | 0             | 2015-08-11 04:48:29.404646+00 | f
+ 11915997 | 0687dc9b-2bf2-41d3-914e-4a2faffbe4e0 | Dir lieber, heil'ger frommer Christ                     |        411502 | 118573 |                                                                | 0             |                               | f
+ 19999983 | 58627e54-f9a4-4ac0-a492-e21ac319b3bb | Polonaise for Cello and Piano in A major, sine op. B 94 |       1308495 | 527586 |                                                                | 0             | 2016-11-13 16:46:20.747797+00 | f
+ 10547130 | 6547fbbd-cacb-4848-96c5-33365822588b | Peace on Earth                                          |          1766 | 543000 |                                                                | 0             |                               | f
+   535680 | 6a51f7ad-da3f-4baa-95ec-898a50891865 | Deep River Blues                                        |         38102 | 191933 |                                                                | 0             |                          
+
+select * from musicbrainz.release order by random() limit 10;
+   id    |                 gid                  |            name             | artist_credit | release_group | status | packaging | language | script |    barcode    | comment | edits_pending | quality |         last_updated
+---------+--------------------------------------+-----------------------------+---------------+---------------+--------+-----------+----------+--------+---------------+---------+---------------+---------+-------------------------------
+ 1612596 | d1b16c60-7155-4a94-8b38-c9213ba22fe6 | SleepwalkerΓÇÖs Conviction    |        152063 |       1530175 | 1      | 4         |      120 |     28 |               |         | 0             | -1      | 2015-06-12 22:01:20.087042+00
+  861465 | 58848bf7-c1df-479a-bbc7-9c3a93940db6 | Ti si mi u krvi             |        240462 |        343729 | 1      |           |       56 |     28 |               |         | 0             | -1      | 2014-07-27 20:04:30.975573+00
+ 1517042 | 3505aa13-99d8-45c0-8a7f-18a68159c288 | Raise Your Hands (U Got to) |        835678 |       1454849 | 1      |           |      120 |     28 |               |         | 0             | -1      | 2016-06-09 00:26:09.292123+00
+  401209 | a489f899-58db-4862-9e3a-dbac09a16b2d | σñ⌐Φç¿                        |        118270 |        724408 | 1      |           |      198 |     85 | 5904259358927 |         | 0             | -1      |
+ 1426786 | 9b7760ec-8038-4f2f-b233-835c6b8569b6 | Amor y odio                 |       1313287 |       1376174 | 1      |           |      393 |     28 |               |         | 0             | -1      | 2014-05-19 15:00:13.82461+00
+ 1924268 | 72bff32b-f063-48dd-9012-fd65b047ffca | Stern ├╝ber Bethlehem        |             1 |       1773544 | 1      | 1         |      145 |     28 |               |         | 0             | -1      | 2017-03-07 14:00:19.942703+00
+  133893 | bbd832a3-2631-4aab-a952-ed4886a9f97b | Transit of Venus            |        350858 |        504125 | 2      |           |      120 |     28 |               |         | 0             | -1      |
+ 1340754 | 57d95511-17e4-4ee3-a517-26654bc37cf9 | Jos s├ñ tahdot niin          |       1226012 |       1308567 | 1      | 7         |      131 |     28 |               |         | 0             | -1      | 2013-10-12 14:48:43.12362+00
+  843519 | dc8befaa-4914-4f53-9ec2-39e7be78d1b4 | Universal Stew              |        164700 |        916715 | 1      |           |      120 |     28 |               |         | 0             | -1      | 2010-01-24 10:51:39.361907+00
+ 1242576 | bdd06dbf-e2c9-4397-9621-150a1bbe8a0d | Previously Unreleased       |        962245 |       1230583 | 1      |           |      120 |     28 |               |         | 0             | -1      | 2013-01-26 23:00:11.057085+00
+
+
+
+select * from musicbrainz.release_label order by random() limit 10;
+   id    | release | label  | catalog_number |         last_updated
+---------+---------+--------+----------------+-------------------------------
+  598827 | 1061822 |   3267 |                | 2011-07-30 12:02:19.741829+00
+  600744 |    6374 |   1088 | MCD 896493 0   | 2011-08-07 03:19:02.354836+00
+ 1107841 | 1577026 |  91757 | EV0002         | 2015-03-10 18:49:38.597712+00
+  733899 | 1197155 |  64940 |                | 2012-09-11 04:27:14.234946+00
+   99205 |  182250 |    185 | TONAL 7 CD     | 2011-05-16 15:59:00.785958+00
+  560499 |  811256 |   6146 | 822 832-2      | 2011-05-16 15:59:00.785958+00
+ 1102135 | 1570725 |   3267 |                | 2015-02-26 02:21:47.993423+00
+  745702 | 1209705 |  16993 | R2CD42-85      | 2012-10-17 22:20:21.432563+00
+  137419 |  364268 |   7891 | 0167302        | 2014-09-06 17:00:21.527253+00
+ 1050186 | 1517456 | 121759 | ghcd-0002      | 2017-02-26 19:09:36.086519+00
+
+
+
+select * from musicbrainz.release_packaging order by random() limit 10;
+ id |          name          | parent | child_order |                        description                         |                 gid
+----+------------------------+--------+-------------+------------------------------------------------------------+--------------------------------------
+  6 | Keep Case              |        | 0           |                                                            | bb14bb17-e8ad-375f-a3c6-b1f82fd2bcc4
+  9 | Book                   |        | 0           |                                                            | d60b6157-79fe-3913-ab8b-23b32de8690d
+  5 | Other                  |        | 1           |                                                            | 815b7785-8284-3926-8f04-e48bc6c4d102
+  8 | Cassette Case          |        | 0           |                                                            | c70b737a-0114-39a9-88f7-82843e54f906
+  7 | None                   |        | 2           |                                                            | 119eba76-b343-3e02-a292-f0f00644bb9b
+ 11 | Snap Case              |        | 0           |                                                            | 935f2847-8083-3422-8f0d-d7516fcda682
+  4 | Cardboard/Paper Sleeve |        | 0           |                                                            | f7101ce3-0384-39ce-9fde-fbbd0044d35f
+ 16 | Super Jewel Box        |        | 0           |                                                            | dfb7da53-866f-4dfd-a016-80bafaeff3db
+ 13 | Discbox Slider         |        | 0           |                                                            | 21179778-2f98-3d11-816e-42b469a0c924
+ 17 | Digibook               |        | 0           | A perfect bound book with a sleeve at the end to hold a CD | 9f2e13bc-f84f-428a-8342-fd86ece7fc4d
+
+
+
+select * from musicbrainz.release_status order by random() limit 10;
+ id |      name      | parent | child_order |                                                                                               description                                                                                               |                 gid
+----+----------------+--------+-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------
+  3 | Bootleg        |        |           3 | An unofficial/underground release that was not sanctioned by the artist and/or the record company. This includes unofficial live recordings and pirated releases.                                       | 1156806e-d06a-38bd-83f0-cf2284a808b9
+  1 | Official       |        |           1 | Any release officially sanctioned by the artist and/or their record company. Most releases will fit into this category.                                                                                 | 4e304316-386d-3409-af2e-78857eec5cfe
+  4 | Pseudo-Release |        |           4 | An alternate version of a release where the titles have been changed. These don't correspond to any real release and should be linked to the original release using the transl(iter)ation relationship. | 41121bb9-3413-3818-8a9a-9742318349aa
+  2 | Promotion      |        |           2 | A give-away release or a release intended to promote an upcoming official release (e.g. pre-release versions, releases included with a magazine, versions supplied to radio DJs for air-play).          | 518ffc83-5cde-34df-8627-81bff5093d92
+(4 rows)
+
+
+select * from musicbrainz.series order by random() limit 10;
+  id  |                 gid                  |                                       name                                        |                          comment                           | type | ordering_attribute | ordering_type | edits_pending |         last_updated
+------+--------------------------------------+-----------------------------------------------------------------------------------+------------------------------------------------------------+------+--------------------+---------------+---------------+-------------------------------
+ 3469 | bcea4693-b5f2-4a34-b073-2c3e1f03b349 | Mashed Up Funk                                                                    | EP vinyl series of mash-ups by Malente [Christoph G├╢ttsch] | 1    |                788 | 1             | 0             | 2015-07-26 18:01:32.476627+00
+  172 | 8589e6e5-7cb0-4ce9-bf1a-e8ff1086454e | µ╢╝σ««πâÅπâ½πâÆπü«µåéΘ¼▒ µû░πé¡πâúπâ⌐πé»πé┐πâ╝πé╜πâ│πé░                                             |                                                            | 1    |                788 | 1             | 0             | 2014-05-15 11:18:04.692854+00
+ 4511 | 53f0bd95-71f1-4fba-bb1b-d5df9f4b67ab | 12 Tage Geschenke, 2009, Switzerland                                              |                                                            | 2    |                788 | 1             | 0             | 2016-05-07 20:15:43.151341+00
+ 3115 | 87edb081-c0bf-4fd4-b2b2-cf0967a50737 | Indian Classical Masters                                                          |                                                            | 2    |                788 | 1             | 0             | 2015-04-16 09:40:54.435957+00
+ 5505 | c57c9478-16a9-4299-9157-23ede9ee7202 | Top of the Pops                                                                   | Universal Music TV / PolyGram TV                           | 1    |                788 | 1             | 0             | 2017-01-03 23:20:13.129793+00
+  224 | 4410ce68-99e3-4dc7-b44a-2a156465f432 | The Very Best of the 80's                                                         | 2 volumes per year                                         | 1    |                788 | 1             | 0             | 2014-05-15 22:22:12.295923+00
+ 1052 | b2d9be9e-b5bc-4238-bfae-7e9c9fbe73da | Thematic, Bibliographical and Critical Catalogue of the Works of Luigi Boccherini |                                                            | 5    |                788 | 1             | 0             | 2014-06-18 22:49:15.917264+00
+ 5699 | 9a3960ed-191d-4d99-81e2-53279396d647 | The Compact Opera Collection                                                      | a Decca Classics series                                    | 2    |                788 | 1             | 0  
+
+ select * from musicbrainz.series_ordering_type order by random() limit 10;
+ id |   name    | parent | child_order |                                             description                                             |                 gid
+----+-----------+--------+-------------+-----------------------------------------------------------------------------------------------------+--------------------------------------
+  1 | Automatic |        | 0           | Sorts the items in the series automatically by their number attributes, using a natural sort order. | ec5fa247-c37a-39b3-b31d-bdac6207344e
+  2 | Manual    |        | 1           | Allows for manually setting the position of each item in the series.                                | 2950ba43-3532-39e9-a7d1-7dc7e271fa25
+
+
+select * from musicbrainz.series_type order by random() limit 10;
+ id |     name      |  entity_type  | parent | child_order |                              description                               |                 gid
+----+---------------+---------------+--------+-------------+------------------------------------------------------------------------+--------------------------------------
+ 4  | Work          | work          |        |           3 | A series of works.                                                     | b689f694-6305-3d78-954d-df6759a1877b
+ 1  | Release group | release_group |        |           0 | A series of release groups.                                            | 4c1c4949-7b6c-3a2d-9d54-a50a27e4fa77
+ 5  | Catalogue     | work          | 4      |           0 | A series of works which form a catalogue of classical compositions.    | 49482ff0-fc9e-3b8c-a2d0-30e84d9df002
+ 3  | Recording     | recording     |        |           2 | A series of recordings.                                                | dd968243-7128-30a2-81f0-79843430a8e2
+ 6  | Event         | event         |        |           5 | A series of events.                                                    | 64640a2a-1c31-394d-b7b0-683a32ff9aff
+ 7  | Tour          | event         | 6      |           0 | A series of related concerts by an artist in different locations.      | 8ff6df0e-3dce-3bdf-bd57-d386c51b0060
+ 2  | Release       | release       |        |           1 | A series of releases.                                                  | 52b90f1e-ff62-3bd0-b254-5d91ced5d757
+ 8  | Festival      | event         | 6      |           1 | A recurring festival, usually happening annually in the same location. | 44e9f6b1-34a7-3a17-a5d5-07bb100d8887
+ 9  | Run           | event         | 6      |           2 | A series of performances of the same show at the same venue.           | 975e9447-dfa8-3e29-82d6-07908fe36f3e
+
+
+
+select * from musicbrainz.track order by random() limit 10;
+    id    |                 gid                  | recording | medium  | position | number |                  name                   | artist_credit | length | edits_pending |         last_updated          | is_data_track
+----------+--------------------------------------+-----------+---------+----------+--------+-----------------------------------------+---------------+--------+---------------+-------------------------------+---------------
+ 15132999 | 66339e49-23bd-49b2-aee2-6763ab1393ac |  15100710 | 1351562 |        7 | 7      | Fr├ígiles                                |        369277 |        |             0 | 2013-07-19 10:11:58.072239+00 | f
+ 12621274 | 9959ab1c-73be-3362-9475-f6eb72aedad9 |  13672317 | 1188266 |       10 | 10     | Ringing -Beginning of fight-            |        786158 |  37044 |             0 | 2012-06-18 20:02:55.536291+00 | f
+ 18854387 | 5db9352e-41a3-48ef-a95c-e9fc32789e31 |  17920393 | 1707581 |       14 | 14     | Bat Empire                              |        664336 | 197000 |             0 | 2015-06-20 22:31:57.035226+00 | f
+   555353 | e6de17d8-72b1-3ce1-a274-4daa88bdde9b |    627368 |    8075 |        5 | B1     | Hour of Darkness                        |          1323 | 168466 |             0 | 2015-02-05 21:17:09.132774+00 | f
+ 17210613 | 54f9eb7b-8c79-41e9-bb7d-ca80e773f73a |  16676705 | 1549345 |       13 | 13     | My Friend                               |       1400558 |        |             0 | 2014-12-11 09:01:08.289605+00 | f
+ 10801336 | 4bf378aa-9185-3169-8a02-721c8d89d0c7 |  12422291 |  836805 |        7 | 7      | Clochette                               |        721778 | 241160 |             0 | 2011-05-16 16:08:20.288158+00 | f
+  3134365 | 6b8eed42-a403-31d4-942c-bbdc77e74d65 |   3782075 |  942403 |        2 | 2      | Still Tippin' (instrumental)            |       1093722 | 231000 |             0 | 2015-08-14 19:49:02.171588+00 | f
+  2967094 | 6d0d993c-c9ae-364c-8980-cbd278ff8d07 |   3571673 |  936001 |       32 | 32     | Limp Wrist                              |        224647 |  54733 |             0 | 2011-05-16 16:08:20.288158+00 | f
+  5166129 | a598c268-f474-34e3-b92e-0a6beda03eee |   3645781 |  203849 |       11 | 11     | Whiskey in the Jar                      |          6774 | 162000 |             0 | 2011-05-16 16:08:20.288158+00 | f
+  2809697 | 2788096f-7913-39b0-b9f9-8caae7edb825 |   3376923 |  386711 |        8 | 8      | Stabat Mater: II. Cujus animam gementem |         30462 |  57333 |             0 | 2011-05-16 16:08:20.288158+00 | f
