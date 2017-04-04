@@ -1,3 +1,5 @@
+set search_path to millionsong;
+
 copy millionsong.words from
 's3://cs327e-final-project-datasets/million-songs-csv/words.csv'
 iam_role 'arn:aws:iam::255104695819:role/redshift_s3_role'

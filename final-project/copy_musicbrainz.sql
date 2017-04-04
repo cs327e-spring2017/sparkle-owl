@@ -1,3 +1,5 @@
+set search_path to musicbrainz;
+
 copy musicbrainz.area_alias from
 's3://cs327e-final-project-datasets/music-brainz-csv/area_alias.csv'
 iam_role 'arn:aws:iam::255104695819:role/redshift_s3_role'
