@@ -85,7 +85,7 @@ from millionsong.tracks;
 create table unified.ms_lyrics as select track_id, word, count
 from millionsong.lyrics;
 
-create table unified.ms_words as select words
+create table unified.ms_words as select word
 from millionsong.words;
 
 
