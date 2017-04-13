@@ -79,6 +79,9 @@ from millionsong.songs_summary;
 create table unified.ms_songs_popularity as select csong as song,play_count
 from millionsong.songs_popularity;
 
+update ms_songs_summary set song_id = upper(song_id);
+update ms_songs_popularity set song = upper(song);
+
 create table unified.ms_tracks as select tid
 from millionsong.tracks;
 
