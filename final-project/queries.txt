@@ -7,4 +7,4 @@
 7) Do people tend to order series manually or automatically?
 8) What's the average duration of the top 10 most popular songs?
 9) Average number of words used for the most popular songs
-10) Top 10 artists who have produced the least number of songs and their popularity (does producing more songs mean you will be more popular?) 
+10) Top 10 artists who have produced the least number of songs and their popularity 
