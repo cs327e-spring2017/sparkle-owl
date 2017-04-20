@@ -1,0 +1,2 @@
+- fix last query view to display better data
+- query took too long to load
