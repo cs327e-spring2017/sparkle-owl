@@ -87,11 +87,11 @@ order by count(l.word) desc limit 100
 
 --Time: 16630.104 ms
 create or replace view v_song_popular as 
-select summary.artist_name, count(*), popular.play_count
+select summary.artist_name, count(summary.artist_name), popular.play_count
 from ms_songs_summary summary
 join ms_songs_popularity popular on summary.song_id = popular.song
-group by summary.artist_name, popular.play_count
-order by count(summary.artist_name) asc limit 10;
+group by summary.artist_name, popular.play_count 
+order by random() limit 100;
 
 
 
